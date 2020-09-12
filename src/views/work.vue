@@ -16,7 +16,6 @@
         <div class="employer">{{ job.employerDisplay }}</div>
       </div>
     </div>
-    <div class="employer-container"></div>
     <div class="text-container">
       <transition-group name="slide-fade">
         <div

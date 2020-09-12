@@ -52,7 +52,7 @@ body {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  height: 750px;
+  height: 90vh;
   width: 100%;
   left: 50%;
   font-size: 9vw;
@@ -305,6 +305,7 @@ body {
   padding: 15px 15px 0 15px;
   border-radius: 25px;
   color: #fff;
+  transition: 0.5s;
 }
 
 .linkedin i:hover {
@@ -318,11 +319,23 @@ body {
   padding: 15px;
   border-radius: 25px;
   color: #fff;
+  transition: 0.5s;
 }
 
 .phone i:hover {
   background-color: #fff;
   color: #5bc236;
+}
+
+.phone-text {
+  background-color: #fff;
+  color: #000;
+  height: auto;
+  text-align: center;
+}
+
+.phone-text .job-title {
+  padding: 20px 0 20px 0;
 }
 
 .mail i {
@@ -331,6 +344,7 @@ body {
   padding: 15px;
   border-radius: 25px;
   color: #fff;
+  transition: 0.5s;
 }
 
 .mail i:hover {
