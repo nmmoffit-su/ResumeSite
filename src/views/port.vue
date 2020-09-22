@@ -1,5 +1,5 @@
 <template>
-  <div class="employers-apps">
+  <div class="port-apps apps">
     <div class="app-container">
       <div v-for="(app, index) in apps" :key="index" class="app-bkgd">
         <a :href="app.link">

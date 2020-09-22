@@ -1,5 +1,5 @@
 <template>
-  <div class="employers-apps">
+  <div class="employers-apps apps">
     <div class="app-container">
       <div
         v-for="(job, index) in jobs"

@@ -47,6 +47,10 @@ body {
   display: none;
 }
 
+.router-link-active {
+  color: #fff;
+}
+
 .hero {
   display: flex;
   justify-content: center;
@@ -98,18 +102,18 @@ body {
   text-align: center;
 }
 
-.employers-apps {
+.apps {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.employers-apps a {
+.apps a {
   border: 25px solid transparent;
 }
 
-.employers-apps img {
+.apps img {
   height: 200px;
 }
 
@@ -170,7 +174,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  height: 400px;
+  height: 45vh;
 }
 
 .syracuse:hover {
@@ -256,27 +260,6 @@ body {
   border-radius: 25px;
 }
 
-.contact-apps {
-  display: flex;
-  align-items: center;
-  height: calc(100vh - 216px);
-  justify-content: center;
-}
-
-.contact-apps div {
-  border: 25px solid transparent;
-}
-
-.contact-apps i {
-  border-radius: 20px;
-  color: #fff;
-  transition: 0.5s;
-  font-size: 180px;
-  height: 180px;
-  width: 180px;
-  border: 25px solid transparent;
-}
-
 .apps i:hover {
   transition: color 0.5s;
   transition: background-color 0.5s linear;
@@ -335,7 +318,7 @@ body {
 }
 
 .phone-text .job-title {
-  padding: 20px 0 20px 0;
+  padding: 20px 0 20px 0 !important;
 }
 
 .mail i {
@@ -383,6 +366,10 @@ i {
   height: auto;
 }
 
+.contact-apps .text {
+  height: auto;
+}
+
 .smimgmargin {
   margin-top: 100px;
 }
@@ -408,7 +395,6 @@ i {
   }
 
   .port-apps .github i {
-    font-size: 20vw;
     justify-content: center;
   }
 }
@@ -419,35 +405,48 @@ i {
   }
 
   .app-container {
-    flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     margin-left: 10px;
     margin-right: 10px;
-    height: 750px;
+    height: auto;
+    margin-bottom: 15px;
   }
 
-  .employers-apps {
-    flex-direction: row;
+  .apps {
+    height: 80vh;
   }
 
-  .employers-apps a {
+  .edu-apps .app-container {
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .apps a {
     border: none;
   }
 
-  .app-bkgd {
-    margin: 0 0 10px 0;
+  .employers-apps .app-bkgd {
     height: auto;
   }
 
-  .employers-apps img {
+  .apps img {
     width: 145px;
     height: 145px;
   }
 
   .text-container {
-    width: 100%;
+    width: 95%;
     margin-right: 15px;
+  }
+
+  .contact-apps .text-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-apps .text {
+    width: 700px;
   }
 
   .text {
@@ -458,23 +457,19 @@ i {
     transition: none;
   }
 
-  .port-apps .github i {
-    font-size: 30vw;
-    padding: 2.5vw;
+  .apps i {
+    width: 155px;
+    height: 155px;
+    font-size: 155px;
   }
 
-  .contact-apps i {
-    width: 125px;
-    height: 125px;
-    font-size: 125px;
+  .contact-apps .job-title {
+    padding: 0;
   }
 
-  .contact-apps .linkedin i {
-    font-size: 145px;
-  }
-
-  .contact-apps div {
-    border: 15px solid transparent;
+  .apps .linkedin i {
+    font-size: 175px;
+    padding-bottom: 15px;
   }
 
   .smimgmargin {
@@ -483,19 +478,12 @@ i {
 }
 
 @media only screen and (max-width: 767px) {
-  .employer-container {
-    display: flex;
-    width: 515px;
-    margin-bottom: 25px;
-    justify-content: space-between;
-  }
-
-  .employer:first-of-type {
-  }
-
-  .employers-apps {
+  .apps {
     flex-direction: column;
-    margin-top: 72px;
+  }
+
+  .app-bkgd {
+    margin: 0 10px 0 10px;
   }
 
   .app-container {
@@ -503,11 +491,12 @@ i {
     height: auto;
   }
 
-  .app-bkgd {
-    padding-right: 25px;
-  }
   .app-bkgd:last-of-type {
     padding-right: 0;
+  }
+
+  .text {
+    width: 99%;
   }
 
   .text-container {
@@ -519,19 +508,14 @@ i {
     padding-top: 24px;
   }
 
-  .port-apps .github i {
-    font-size: 36vw;
-  }
-
-  .port-apps {
-    height: 300px;
-  }
-
-  .contact-apps {
+  .apps {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - 72px);
+  }
+
+  .contact-apps .text {
+    width: 400px;
   }
 }
 
