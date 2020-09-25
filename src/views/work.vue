@@ -82,9 +82,9 @@ export default {
           text: 'reddragons',
           link: 'https://www.cortlandreddragons.com',
           title:
-            'I wrote the code for this website as part of my training at SIDEARM Sports',
+            'I wrote the code for the Cortland University Athletics website as part of my training at SIDEARM Sports',
           hover: false,
-          description: [{ bullet: 'Click the app to check it out' }]
+          description: [{ bullet: 'Click the Cortland app to check it out' }]
         }
       ],
       ItemIndex: null

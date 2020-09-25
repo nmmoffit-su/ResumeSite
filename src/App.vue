@@ -1,18 +1,36 @@
 <template>
   <div id="app">
-    <div class="navigation-row">
-      <div class="brand">
-        <router-link class="links" to="/">
-          <strong>Web Development</strong>
-        </router-link>
-      </div>
-      <nav>
-        <router-link class="links" :to="{ name: 'work' }">Work</router-link>
-        <router-link class="links" :to="{ name: 'edu' }">Education</router-link>
-        <router-link class="links" :to="{ name: 'port' }">Portfolio</router-link>
-        <router-link class="links" :to="{ name: 'contact' }">Contact</router-link>
+    <div class>
+      <nav class="navigation-row navbar navbar-expand-md">
+        <div class="brand">
+          <router-link class="links" to="/">
+            <strong>Web Development</strong>
+          </router-link>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbar"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbar">
+          <ul class="navbar-nav">
+            <router-link class="links" :to="{ name: 'work' }">Work</router-link>
+            <router-link class="links" :to="{ name: 'edu' }">Education</router-link>
+            <router-link class="links" :to="{ name: 'port' }">Portfolio</router-link>
+            <router-link class="links" :to="{ name: 'contact' }">Contact</router-link>
+          </ul>
+        </div>
       </nav>
     </div>
+    <!--div class="loading">
+      <hollow-dots-spinner :animation-duration="1000" :dot-size="15" :dots-num="3" :color="'#ccc'" />
+    </div-->
     <router-view></router-view>
   </div>
 </template>
@@ -27,8 +45,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 72px;
-  padding: 0 24px;
+  padding: 24px;
 }
 
 .links {
@@ -39,6 +56,7 @@ body {
 }
 
 .links:hover {
+  text-decoration: none;
   color: #fff;
   transition: color 0.5s;
 }
@@ -47,8 +65,17 @@ body {
   display: none;
 }
 
+.router-link:hover {
+  text-decoration: none;
+}
+
 .router-link-active {
   color: #fff;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
 }
 
 .hero {
@@ -135,10 +162,13 @@ body {
 }
 
 .text {
+  position: absolute;
+  left: 50%;
+  margin-left: -375px;
   border-radius: 25px;
   height: 175px;
   width: 750px;
-  margin: 15px;
+  margin-top: 15px;
 }
 
 .job-title {
@@ -279,9 +309,6 @@ body {
   transition: 0.5s;
 }
 
-.linkedin {
-}
-
 .linkedin i {
   background-color: #0077b5;
   font-size: 200px;
@@ -367,7 +394,15 @@ i {
 }
 
 .contact-apps .text {
-  height: auto;
+  height: 55px;
+}
+
+.contact-apps .text:first-of-type {
+  display: none !important;
+}
+
+.contact-apps .text:last-of-type {
+  display: none !important;
 }
 
 .smimgmargin {
@@ -417,6 +452,10 @@ i {
     height: 80vh;
   }
 
+  .employers-apps {
+    height: auto;
+  }
+
   .edu-apps .app-container {
     height: auto;
     margin-bottom: 15px;
@@ -450,6 +489,7 @@ i {
   }
 
   .text {
+    position: static;
     display: block !important;
     margin: 0 0 10px 0;
     height: 169px;
@@ -533,3 +573,11 @@ i {
   }
 }
 </style>
+<!--script>
+import { HollowDotsSpinner } from 'epic-spinners'
+export default {
+  components: {
+    HollowDotsSpinner
+  }
+}
+</script-->
