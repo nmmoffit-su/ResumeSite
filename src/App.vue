@@ -19,11 +19,17 @@
           <i class="fa fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbar">
-          <ul class="navbar-nav">
+          <ul class="nav navbar-nav">
             <router-link class="links" :to="{ name: 'work' }">Work</router-link>
-            <router-link class="links" :to="{ name: 'edu' }">Education</router-link>
-            <router-link class="links" :to="{ name: 'port' }">Portfolio</router-link>
-            <router-link class="links" :to="{ name: 'contact' }">Contact</router-link>
+            <router-link class="links" :to="{ name: 'edu' }"
+              >Education</router-link
+            >
+            <router-link class="links" :to="{ name: 'port' }"
+              >Portfolio</router-link
+            >
+            <router-link class="links" :to="{ name: 'contact' }"
+              >Contact</router-link
+            >
           </ul>
         </div>
       </nav>
@@ -45,7 +51,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px;
+  padding: 24px !important;
 }
 
 .links {
@@ -173,7 +179,7 @@ body {
 
 .job-title {
   padding-top: 20px;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .cuse .job-title,
@@ -283,6 +289,7 @@ body {
   color: #444;
   transition: color 1s;
   transition: background-color 0.5s linear;
+  text-decoration: none;
 }
 
 .github i {
@@ -345,7 +352,7 @@ body {
 }
 
 .phone-text .job-title {
-  padding: 20px 0 20px 0 !important;
+  padding: 15px 0 15px 0 !important;
 }
 
 .mail i {
@@ -498,8 +505,6 @@ i {
   }
 
   .apps i {
-    width: 155px;
-    height: 155px;
     font-size: 155px;
   }
 
@@ -509,7 +514,7 @@ i {
 
   .apps .linkedin i {
     font-size: 175px;
-    padding-bottom: 15px;
+    padding-bottom: none;
   }
 
   .smimgmargin {
@@ -535,8 +540,13 @@ i {
     padding-right: 0;
   }
 
+  .employers-apps .text {
+    padding-bottom: 10px;
+  }
+
   .text {
     width: 99%;
+    height: 100%;
   }
 
   .text-container {
@@ -573,11 +583,14 @@ i {
   }
 }
 </style>
-<!--script>
-import { HollowDotsSpinner } from 'epic-spinners'
+<script>
+import $ from 'jquery'
+
 export default {
-  components: {
-    HollowDotsSpinner
+  watch: {
+    $route() {
+      $('#navbar').collapse('hide')
+    }
   }
 }
-</script-->
+</script>
