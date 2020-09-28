@@ -466,10 +466,6 @@ i {
 }
 
 @media only screen and (max-width: 1024px) {
-  #app {
-    min-width: 539px;
-  }
-
   .hero a {
     font-size: 5vw;
   }
