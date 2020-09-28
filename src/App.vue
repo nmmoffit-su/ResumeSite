@@ -92,7 +92,7 @@ body {
   height: 90vh;
   width: 100%;
   left: 50%;
-  font-size: 8.8vw;
+  font-size: 8.87vw;
   color: #ccc;
   opacity: 1;
 }
