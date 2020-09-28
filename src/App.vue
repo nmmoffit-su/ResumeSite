@@ -92,7 +92,7 @@ body {
   height: 90vh;
   width: 100%;
   left: 50%;
-  font-size: 9vw;
+  font-size: 9.3vw;
   color: #ccc;
   opacity: 1;
 }
@@ -117,7 +117,6 @@ body {
   margin-bottom: 24px;
   white-space: nowrap;
   overflow: hidden;
-  padding-right: 5px;
   -webkit-animation: typing 4s steps(100, end) 1s 1 normal both,
     blink-caret 0.5s step-end infinite alternate;
 }
@@ -428,20 +427,19 @@ i {
   opacity: 0;
 }
 
-@media only screen and (min-width: 1440px) {
+.port-apps .github i {
+  justify-content: center;
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1024px) {
+  #app {
+    min-width: 539px;
+  }
+
   .hero a {
     font-size: 5vw;
   }
 
-  .port-apps .github i {
-    justify-content: center;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
   .employer-container {
     display: none;
   }
@@ -477,8 +475,8 @@ i {
   }
 
   .apps img {
-    width: 145px;
-    height: 145px;
+    width: 135px;
+    height: 135px;
   }
 
   .text-container {
@@ -505,7 +503,7 @@ i {
   }
 
   .apps i {
-    font-size: 155px;
+    font-size: 125px;
   }
 
   .contact-apps .job-title {
@@ -513,7 +511,7 @@ i {
   }
 
   .apps .linkedin i {
-    font-size: 175px;
+    font-size: 135px;
     padding-bottom: none;
   }
 
@@ -525,6 +523,11 @@ i {
 @media only screen and (max-width: 767px) {
   .apps {
     flex-direction: column;
+  }
+
+  .hero {
+    font-size: 8.8vw;
+    height: 60vh;
   }
 
   .app-bkgd {
@@ -566,6 +569,29 @@ i {
 
   .contact-apps .text {
     width: 400px;
+  }
+}
+@media only screen and (max-width: 440px) {
+  .hero {
+    font-size: 12vw;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .hero {
+    font-size: 13vw;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .hero {
+    font-size: 15vw;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .hero {
+    font-size: 17.5vw;
   }
 }
 
