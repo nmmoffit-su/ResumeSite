@@ -28,7 +28,9 @@
           <div class="job-title">{{ app.title }}</div>
           <div class="job-description">
             <ul>
-              <li v-for="(bullets, index2) in app.description" :key="index2">{{ bullets.bullet }}</li>
+              <li v-for="(bullets, index2) in app.description" :key="index2">
+                {{ bullets.bullet }}
+              </li>
             </ul>
           </div>
         </div>
@@ -45,7 +47,7 @@ export default {
           appTitle: 'Syracuse University',
           employer: 'syracuse',
           text: 'cuse',
-          link: 'https://github.com/nmmoffit-su',
+          link: 'https://www.syracuse.edu',
           hover: false,
           title: 'B.S. in Information Management & Technology',
           description: [

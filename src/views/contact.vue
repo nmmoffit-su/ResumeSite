@@ -28,7 +28,9 @@
           <div class="job-title">{{ app.title }}</div>
           <div class="job-description">
             <ul>
-              <li v-for="(bullets, index2) in app.description" :key="index2">{{ bullets.bullet }}</li>
+              <li v-for="(bullets, index2) in app.description" :key="index2">
+                {{ bullets.bullet }}
+              </li>
             </ul>
           </div>
         </div>
@@ -44,7 +46,7 @@ export default {
         {
           appTitle: 'LinkedIn',
           class: 'linkedin',
-          link: 'https:www.linkedin.com/in/nicholas-moffitt/',
+          link: 'https://www.linkedin.com/in/nicholas-moffitt/',
           icon: 'fab fa-linkedin-in'
         },
         {
