@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from '../views/home.vue'
+import Home from '../views/Home.vue'
 import Work from '../views/work.vue'
 import Edu from '../views/edu.vue'
 import Port from '../views/port.vue'
@@ -14,7 +14,7 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
+      name: 'Home',
       component: Home
     },
     {
