@@ -597,29 +597,6 @@ i {
     width: 400px;
   }
 }
-@media only screen and (max-width: 440px) {
-  .hero {
-    font-size: 12vw;
-  }
-}
-
-@media only screen and (max-width: 380px) {
-  .hero {
-    font-size: 13vw;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  .hero {
-    font-size: 15vw;
-  }
-}
-
-@media only screen and (max-width: 280px) {
-  .hero {
-    font-size: 17.5vw;
-  }
-}
 
 @-webkit-keyframes typing {
   from {
