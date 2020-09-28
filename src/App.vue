@@ -431,6 +431,40 @@ i {
   justify-content: center;
 }
 
+.error {
+  color: #ccc;
+  font-size: 9vw;
+  text-align: center;
+}
+
+.error-text {
+  color: #ccc;
+  font-size: 4vw;
+  text-align: center;
+}
+
+.back-home {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.home {
+  border: solid 3px #ccc;
+  border-radius: 20px;
+  font-size: 3vw;
+  color: #ccc;
+  padding: 10px 20px;
+  transition: 0.5s;
+}
+
+.home:hover {
+  text-decoration: none;
+  color: #444;
+  background-color: #ccc;
+  transition: 0.5s;
+}
+
 @media only screen and (max-width: 1024px) {
   #app {
     min-width: 539px;
@@ -513,10 +547,6 @@ i {
   .apps .linkedin i {
     font-size: 135px;
     padding-bottom: none;
-  }
-
-  .smimgmargin {
-    margin-top: 0px;
   }
 }
 
