@@ -306,7 +306,7 @@ body {
 .github i {
   background-color: #fff;
   color: #6e5494;
-  font-size: 28vw;
+  font-size: 220px;
   transition: 0.5s;
 }
 
@@ -577,6 +577,10 @@ i {
 
   .employers-apps .text {
     padding-bottom: 10px;
+  }
+
+  .github i {
+    font-size: 28vw;
   }
 
   .phone i {
