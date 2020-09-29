@@ -306,7 +306,7 @@ body {
 .github i {
   background-color: #fff;
   color: #6e5494;
-  font-size: 205px;
+  font-size: 28vw;
   transition: 0.5s;
 }
 
@@ -610,8 +610,8 @@ i {
 
 @media only screen and (max-width: 540px) {
   .apps img {
-    width: 26vw;
-    height: 26vw;
+    width: 28vw;
+    height: 28vw;
   }
 
   .edu-apps img {
@@ -620,6 +620,10 @@ i {
   }
 
   .employers-apps .app-bkgd {
+    margin: 0;
+  }
+
+  .app-container {
     margin: 0;
   }
 }
