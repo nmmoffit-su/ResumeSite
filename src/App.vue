@@ -169,6 +169,7 @@ body {
 .text {
   position: absolute;
   left: 50%;
+  height: 100%;
   margin-left: -375px;
   border-radius: 25px;
   height: 175px;
@@ -351,7 +352,8 @@ body {
 }
 
 .phone-text .job-title {
-  padding: 15px 0 15px 0 !important;
+  padding-top: 15px !important;
+  line-height: 1;
 }
 
 .mail i {
@@ -397,10 +399,6 @@ i {
   padding: 20px;
   width: 100%;
   height: auto;
-}
-
-.contact-apps .text {
-  height: 55px;
 }
 
 .contact-apps .text:first-of-type {
@@ -477,8 +475,8 @@ i {
   .app-container {
     align-items: flex-start;
     justify-content: center;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 1vw;
+    margin-right: 1vw;
     height: auto;
     margin-bottom: 15px;
   }
@@ -505,8 +503,8 @@ i {
   }
 
   .apps img {
-    width: 135px;
-    height: 135px;
+    width: 22vw;
+    height: 22vw;
   }
 
   .text-container {
@@ -519,15 +517,10 @@ i {
     justify-content: center;
   }
 
-  .contact-apps .text {
-    width: 700px;
-  }
-
   .text {
     position: static;
     display: block !important;
     margin: 0 0 10px 0;
-    height: 169px;
     width: 100%;
     transition: none;
   }
@@ -536,13 +529,26 @@ i {
     font-size: 125px;
   }
 
-  .contact-apps .job-title {
-    padding: 0;
+  .contact-apps .text {
+    width: auto;
+    height: auto;
+  }
+
+  .phone-text .job-title {
+    padding: 15px;
   }
 
   .apps .linkedin i {
-    font-size: 135px;
-    padding-bottom: none;
+    font-size: 23.7vw;
+    padding: 10px 10px 5px 10px;
+  }
+
+  .apps .phone i {
+    font-size: 22vw;
+  }
+
+  .apps .mail i {
+    font-size: 22vw;
   }
 }
 
@@ -557,7 +563,7 @@ i {
   }
 
   .app-bkgd {
-    margin: 0 10px 0 10px;
+    margin: 0 1vw 0 1vw;
   }
 
   .app-container {
@@ -571,6 +577,14 @@ i {
 
   .employers-apps .text {
     padding-bottom: 10px;
+  }
+
+  .phone i {
+    padding: 10px;
+  }
+
+  .mail i {
+    padding: 10px;
   }
 
   .text {
@@ -592,9 +606,19 @@ i {
     align-items: center;
     justify-content: center;
   }
+}
 
-  .contact-apps .text {
-    width: 400px;
+@media only screen and (max-width: 540px) {
+  .edu-apps img {
+    width: 30vw;
+    height: 30vw;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .edu-apps img {
+    width: 40vw;
+    height: 40vw;
   }
 }
 
