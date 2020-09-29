@@ -563,7 +563,7 @@ i {
   }
 
   .app-bkgd {
-    margin: 0 1vw 0 1vw;
+    margin: 0 0.5vw 0 0.5vw;
   }
 
   .app-container {
@@ -609,9 +609,18 @@ i {
 }
 
 @media only screen and (max-width: 540px) {
+  .apps img {
+    width: 26vw;
+    height: 26vw;
+  }
+
   .edu-apps img {
     width: 30vw;
     height: 30vw;
+  }
+
+  .employers-apps .app-bkgd {
+    margin: 0;
   }
 }
 
