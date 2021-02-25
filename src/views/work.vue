@@ -28,7 +28,9 @@
           <div class="job-title">{{ job.title }}</div>
           <div class="job-description">
             <ul>
-              <li v-for="(bullets, index2) in job.description" :key="index2">{{ bullets.bullet }}</li>
+              <li v-for="(bullets, index2) in job.description" :key="index2">
+                {{ bullets.bullet }}
+              </li>
             </ul>
           </div>
         </div>
@@ -49,15 +51,16 @@ export default {
           title: 'Advanced Web Design Teaching Assistant',
           hover: false,
           description: [
-            { bullet: 'Mentored students on lab days' },
+            { bullet: 'Mentored over 20 students during Lab days' },
             {
-              bullet: 'Evaluated labs assignments before released to students'
+              bullet:
+                'Evaluated labs assignments created by the professor before being released to students',
             },
             {
               bullet:
-                'Tutored students in office hours alone every week for one hour'
-            }
-          ]
+                'Tutored students during office hours without the instructor every week for 1 hour',
+            },
+          ],
         },
         {
           employerDisplay: 'SIDEARM Sports',
@@ -67,14 +70,19 @@ export default {
           title: 'Data Curation & Production Assistant',
           hover: false,
           description: [
-            { bullet: 'Trained with the Front-End Development Team' },
             {
-              bullet: 'Worked within CMS to assist in the creation of websites'
+              bullet:
+                'Received training from 2 people on the Front-End Development team and learned such skills as writing HTML, CSS, Knockout.js, and Vue.js',
             },
             {
-              bullet: 'Delivered projects in a set timeframe'
-            }
-          ]
+              bullet:
+                'Accepted legacy data from clients and reformatted for company platform utilizing proprietary Content Management System',
+            },
+            {
+              bullet:
+                'Consistently delivered projects on time according to company schedule',
+            },
+          ],
         },
         {
           employerDisplay: 'Cortland Athletics',
@@ -84,10 +92,10 @@ export default {
           title:
             'I wrote the code for the Cortland University Athletics website as part of my training at SIDEARM Sports',
           hover: false,
-          description: [{ bullet: 'Click the Cortland app to check it out' }]
-        }
+          description: [{ bullet: 'Click the Cortland app to check it out' }],
+        },
       ],
-      ItemIndex: null
+      ItemIndex: null,
     }
   },
   methods: {
@@ -97,7 +105,7 @@ export default {
     getSrc(employer) {
       var images = require.context('../assets/', false, /\.png$/)
       return images('./' + employer + '.png')
-    }
-  }
+    },
+  },
 }
 </script>

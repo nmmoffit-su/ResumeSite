@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class>
+    <div>
       <nav class="navigation-row navbar navbar-expand-md">
         <div class="brand">
           <router-link class="links" to="/">
