@@ -72,7 +72,7 @@ export default {
           description: [
             {
               bullet:
-                'Received training from 2 people on the Front-End Development team and learned such skills as writing HTML, CSS, Knockout.js, and Vue.js',
+                'Received training from 2 people on the Front-End Development team',
             },
             {
               bullet:
