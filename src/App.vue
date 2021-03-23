@@ -34,9 +34,6 @@
         </div>
       </nav>
     </div>
-    <!--div class="loading">
-      <hollow-dots-spinner :animation-duration="1000" :dot-size="15" :dots-num="3" :color="'#ccc'" />
-    </div-->
     <router-view></router-view>
   </div>
 </template>
@@ -46,6 +43,8 @@ body {
   font-family: 'Questrial', sans-serif;
   margin: 0;
 }
+
+/* Navbar */
 
 .navigation-row {
   display: flex;
@@ -79,10 +78,7 @@ body {
   color: #fff;
 }
 
-.loading {
-  display: flex;
-  justify-content: center;
-}
+/* Homepage Main Content*/
 
 .hero {
   display: flex;
@@ -127,6 +123,8 @@ body {
   font-size: 3vw;
   padding: 10px 20px;
 }
+
+/* Work */
 
 .employer {
   color: #ccc;
@@ -271,6 +269,8 @@ body {
   color: #fff;
 }
 
+/* Education */
+
 .edu-app {
   display: flex;
   justify-content: center;
@@ -278,19 +278,7 @@ body {
   height: 450px;
 }
 
-.contact {
-  border-radius: 5px;
-  border: solid 1px #ddd;
-  transition: 1s;
-}
-
-.contact:hover {
-  background-color: #ddd;
-  color: #444;
-  transition: color 1s;
-  transition: background-color 0.5s linear;
-  text-decoration: none;
-}
+/* Github */
 
 .github i {
   padding: 10px;
@@ -314,6 +302,22 @@ body {
   background-color: #6e5494;
   color: #fff;
   transition: 0.5s;
+}
+
+/* Contact Info*/
+
+.contact {
+  border-radius: 5px;
+  border: solid 1px #ddd;
+  transition: 1s;
+}
+
+.contact:hover {
+  background-color: #ddd;
+  color: #444;
+  transition: color 1s;
+  transition: background-color 0.5s linear;
+  text-decoration: none;
 }
 
 .linkedin i {
@@ -413,6 +417,8 @@ i {
   margin-top: 100px;
 }
 
+/* Animations */
+
 .slide-fade-enter-active {
   transition: all 0.4s ease;
 }
@@ -428,6 +434,8 @@ i {
 .port-apps .github i {
   justify-content: center;
 }
+
+/* 404 page */
 
 .error {
   color: #ccc;
@@ -462,6 +470,8 @@ i {
   background-color: #ccc;
   transition: 0.5s;
 }
+
+/* Responsiveness */
 
 @media only screen and (max-width: 1024px) {
   .hero a {
@@ -624,7 +634,7 @@ i {
   }
 
   .employers-apps .app-bkgd {
-    margin: 0;
+    margin: 15px;
   }
 
   .app-container {
@@ -660,7 +670,7 @@ export default {
   watch: {
     $route() {
       $('#navbar').collapse('hide')
-    }
-  }
+    },
+  },
 }
 </script>

@@ -5,7 +5,7 @@ import Work from '../views/work.vue'
 import Edu from '../views/edu.vue'
 import Port from '../views/port.vue'
 import Contact from '../views/contact.vue'
-import NotFound from '../views/not-found.vue'
+import NotFound from '../views/404.vue'
 
 Vue.use(Router)
 
@@ -44,6 +44,7 @@ export default new Router({
     },
     {
       path: '*',
+      name: 'NotFound',
       redirect: '/404'
     }
   ]
