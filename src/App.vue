@@ -624,8 +624,8 @@ i {
 
 @media only screen and (max-width: 540px) {
   .apps img {
-    width: 28vw;
-    height: 28vw;
+    width: 16vw;
+    height: 16vw;
   }
 
   .edu-apps img {
@@ -634,11 +634,14 @@ i {
   }
 
   .employers-apps .app-bkgd {
-    margin: 15px;
+    margin: 0 17px 10px 17px;
   }
 
   .app-container {
     margin: 0;
+  }
+  .reddragons ul {
+    padding: 0;
   }
 }
 
