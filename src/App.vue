@@ -579,6 +579,7 @@ i {
   .app-container {
     flex-direction: row;
     height: auto;
+    width: 12vw;
   }
 
   .app-bkgd:last-of-type {
@@ -634,7 +635,7 @@ i {
   }
 
   .employers-apps .app-bkgd {
-    margin: 0;
+    margin: 15px;
   }
 
   .app-container {
