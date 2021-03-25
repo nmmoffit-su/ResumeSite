@@ -634,7 +634,7 @@ i {
   }
 
   .employers-apps .app-bkgd {
-    margin: 0 17px 10px 17px;
+    margin: 0;
   }
 
   .app-container {
