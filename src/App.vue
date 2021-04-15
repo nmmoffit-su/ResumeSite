@@ -4,7 +4,7 @@
       <nav class="navigation-row navbar navbar-expand-md">
         <div class="brand">
           <router-link class="links" to="/">
-            <strong>Web Development</strong>
+            <img class="head-logo" src="../public/head-logo.png" />
           </router-link>
         </div>
         <button
@@ -53,6 +53,10 @@ body {
   padding: 24px !important;
 }
 
+.head-logo {
+  height: 36px;
+}
+
 .links {
   text-decoration: none;
   padding-right: 10px;
@@ -78,6 +82,10 @@ body {
   color: #fff;
 }
 
+#navbar {
+  padding-top: 15px;
+}
+
 /* Homepage Main Content*/
 
 .hero {
@@ -88,7 +96,7 @@ body {
   height: 90vh;
   width: 100%;
   left: 50%;
-  font-size: 8.87vw;
+  font-size: 9.3vw;
   color: #ccc;
   opacity: 1;
 }
@@ -568,7 +576,7 @@ i {
   }
 
   .hero {
-    font-size: 8.8vw;
+    font-size: 9.2vw;
     height: 60vh;
   }
 
@@ -624,6 +632,10 @@ i {
 }
 
 @media only screen and (max-width: 540px) {
+  .hero {
+    font-size: 9vw;
+  }
+
   .apps img {
     width: 16vw;
     height: 16vw;
