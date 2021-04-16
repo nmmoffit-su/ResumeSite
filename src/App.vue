@@ -96,7 +96,7 @@ body {
   height: 90vh;
   width: 100%;
   left: 50%;
-  font-size: 9.3vw;
+  font-size: 8.8vw;
   color: #ccc;
   opacity: 1;
 }
@@ -576,7 +576,6 @@ i {
   }
 
   .hero {
-    font-size: 9.2vw;
     height: 60vh;
   }
 
@@ -632,10 +631,6 @@ i {
 }
 
 @media only screen and (max-width: 540px) {
-  .hero {
-    font-size: 9vw;
-  }
-
   .apps img {
     width: 16vw;
     height: 16vw;
