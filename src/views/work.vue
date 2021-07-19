@@ -9,7 +9,7 @@
         class="app-bkgd"
       >
         <a :href="job.link">
-          <div :class="job.employer">
+          <div class="app-item" :class="job.employer">
             <img :src="getSrc(job.employer)" />
           </div>
         </a>
@@ -93,6 +93,16 @@ export default {
             'I wrote the code for the Cortland University Athletics website as part of my training at SIDEARM Sports',
           hover: false,
           description: [{ bullet: 'Click the Cortland app to check it out' }],
+        },
+        {
+          employerDisplay: 'Wallace Burgess',
+          employer: 'wallace',
+          text: 'burgess',
+          link: 'https://www.wallaceburgess.com',
+          title:
+            "I designed and built this website using Vue.js to host a friend's writing examples",
+          hover: false,
+          description: [{ bullet: 'Click the WB app to check it out' }],
         },
       ],
       ItemIndex: null,

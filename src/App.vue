@@ -96,7 +96,7 @@ body {
   height: 90vh;
   width: 100%;
   left: 50%;
-  font-size: 8.8vw;
+  font-size: 8.85vw;
   color: #ccc;
   opacity: 1;
 }
@@ -121,7 +121,7 @@ body {
   margin-bottom: 24px;
   white-space: nowrap;
   overflow: hidden;
-  -webkit-animation: typing 4s steps(100, end) 1s 1 normal both,
+  -webkit-animation: typing 4s steps(60, end) 1s 1 both,
     blink-caret 0.5s step-end infinite alternate;
 }
 
@@ -152,6 +152,10 @@ body {
 }
 
 .apps img {
+  max-height: 180px;
+}
+
+.app-item {
   height: 200px;
 }
 
@@ -275,6 +279,30 @@ body {
 
 .cortland-link a {
   color: #fff;
+}
+
+.wallace {
+  padding: 10px;
+  background-color: #c9d6df;
+  color: #1e2022;
+  border-radius: 25px;
+  transition: 0.5s;
+}
+
+.wallace:hover {
+  background-color: #1e2022;
+}
+
+.burgess {
+  border-radius: 25px;
+  background-color: #c9d6df;
+  text-align: center;
+  padding: 15px;
+}
+
+.burgess ul {
+  list-style-type: none;
+  padding: 0;
 }
 
 /* Education */
@@ -521,10 +549,12 @@ i {
   }
 
   .apps img {
-    width: 22vw;
-    height: 22vw;
+    width: 14vw;
+    height: 14vw;
   }
-
+  .app-item {
+    height: auto;
+  }
   .text-container {
     width: 95%;
     margin-right: 15px;
@@ -609,15 +639,21 @@ i {
     padding: 10px;
   }
 
+  .job-title {
+    padding: 0;
+  }
+
   .text {
     width: 99%;
     height: 100%;
+    padding: 15px;
+    font-size: 14px;
   }
 
   .text-container {
     flex-direction: row;
     width: 90%;
-    margin: 0;
+    margin: 20px 0 0 0;
   }
   .port-header {
     padding-top: 24px;
@@ -639,10 +675,6 @@ i {
   .edu-apps img {
     width: 30vw;
     height: 30vw;
-  }
-
-  .employers-apps .app-bkgd {
-    margin: 15px;
   }
 
   .app-container {
